@@ -1,0 +1,32 @@
+.hero-image{
+    background-image: var(--image);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: var(--attachment);
+    &-opacity{
+        width: 100%;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: $blackAlphaColor;
+        text-align: center;
+    }
+    &-title{
+     text-align: center;   
+     color: $whiteColor;
+     font-size: 11vw;
+     letter-spacing: 2px;
+     margin-bottom: 2rem;
+    }
+    .btn{
+        min-width: 50px;
+       font-size: 2.5vw;
+       text-align: center;
+       padding-left: 1.5rem;
+       padding-right: 1.5rem;
+       letter-spacing: 1px;
+       color: $whiteColor;
+    }
+}

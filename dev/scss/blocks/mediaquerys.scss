@@ -1,0 +1,137 @@
+@include media-tablet {
+  //HOME
+
+  .hero-image-title{
+    font-size: 7.5vw;
+  }
+  //SERVICES
+
+  
+  .services > .container {
+    display: grid;
+    grid-template-columns: repeat(2, 45%);
+    justify-content: space-between;
+    align-content: center;
+    .section-title {
+      grid-column: span 2;
+    }
+  }
+  //SERVICES
+  .portfolio {
+    .container-porfolio{
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    .container {
+      display: grid;
+      grid-template-columns: repeat(2, 50%);
+      
+    }
+    .section-title {
+        grid-column: span 2;
+      }
+      .modal &-modal{
+        flex-direction: row;
+        max-width: 800px;
+      }
+      &-info{
+        margin-left: 1rem;
+      }
+  }
+  .contact-info{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+  }
+}
+
+@include media-desktop {
+  .header {
+    position: sticky;
+    top: 0;
+    padding: 0.5rem 1.2rem 0.5rem 0.5rem;
+    height: $headerHight - 0.5rem;
+  }
+  .header .container {
+    height: 39px;
+  }
+  .menu {
+    opacity: 1;
+    pointer-events: auto;
+    position: static;
+    width: auto;
+    flex-direction: row;
+    padding: 0;
+    &-item {
+      border: none;
+      padding: 0 1rem;
+      font-size: 1rem;
+      &:hover {
+        background-color: transparent;
+      }
+      &:last-child {
+        padding-right: 0;
+      }
+    }
+
+    &-btn {
+      display: none;
+    }
+  }
+
+  //ABOUT
+  .about {
+    display: grid;
+    grid-template-columns: repeat(3, 30%);
+    justify-content: space-between;
+    align-content: center;
+    padding: 3rem 0;
+    min-height: 100vh;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    &-img {
+      margin-top: 0;
+    }
+    .section {
+      padding: 0;
+    }
+  }
+  .progress {
+    width: 100%;
+  }
+  .btn-cv {
+    margin: 0;
+    margin-top: 1rem;
+  }
+  .presentation {
+    text-align: left;
+  }
+  //SERVICES
+
+  .services > .container {
+    grid-template-columns: repeat(3, 30%);
+    min-height: 90vh;
+    .section-title {
+      grid-column: span 3;
+    }
+  }
+  //PORTFOLIO
+  .portfolio {
+    .container {
+      grid-template-columns: repeat(3, 33.33%);
+      min-height: 100vh;
+    }
+    .section-title {
+        grid-column: span 3;
+      }
+  }
+  .contact-info{
+    display: flex;
+  }
+  .contact-card{
+    margin: 0 .8rem;
+  }
+  .footer{
+    margin-bottom: 0;
+  }
+}

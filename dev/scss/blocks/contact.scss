@@ -1,0 +1,118 @@
+.contact{
+    &-info{
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    &-card{
+        width: 90%;
+        padding: 1rem;
+        margin: 1rem auto;
+        height: 11em;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        transition: transform .3s;
+        @include boxShadow;
+        &:hover{
+            transform:scale(1.1)
+        }
+    }
+    .card-content{
+        margin:0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+
+        a,
+        address{
+            color: $grayDarkColor;
+        }
+
+        .svg-media{
+            fill: #D90062;
+            width: 2.7rem;
+            height: 2.7rem;
+        }
+        .card-social-icons img{
+           width: 40px;
+           padding-right: .3rem;
+           padding-left: .3rem;
+        }
+    }
+}
+
+.contact{
+    &-form-container{
+        margin: 2rem auto;
+        width: 75%;
+        @include boxShadow;
+       
+    }
+    &-form{
+        padding: 1.5rem;
+        display: flex;
+        flex-direction: column;
+    }
+    .textarea{
+        resize: none;
+        height: 130px;
+    }
+    &-item{
+        margin-bottom: 1rem;
+        border-radius: 5px;
+        outline-style: none;
+        border-style:none ;
+        border-bottom: 1px solid $grayDarkColor;
+        @include boxShadow;
+        padding: .7rem;
+        cursor: text;
+        &:focus{
+            border-bottom: 3px solid rgb(148, 21, 21);   
+        }
+    }
+    .button-form{
+        align-self: flex-start;
+        outline-style: none;
+        border-style: none;
+        background-color: $firstColor;
+        color: $whiteColor;
+        padding: 1rem 1.5rem;
+        border-radius: 12px;
+        cursor: pointer;
+        transition: opacity .3s ;
+        &:hover{
+            opacity: .7;
+        }
+    }
+    .modal#gracias:target{
+        opacity: 1;
+        pointer-events: auto;
+    }
+    &-form-response{
+        padding: 1rem;
+        width: 400px;
+        border-radius: 8px;
+        text-align: center;
+        background-color: $whiteColor;
+        h5{
+          font-size: 30px;
+          line-height: 1.4;
+        }
+        & svg{
+            margin-top: 2rem;
+            width: 4rem;
+            height: 4rem;
+            fill: $firstColor;
+         }
+    }
+}
+.contact-form{
+    text-align: center;
+}
+
+.section-title{
+    margin-bottom: 3.3rem;
+}

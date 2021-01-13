@@ -1,0 +1,16 @@
+.header{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    z-index: 999;
+    width: 100%;
+    height:$headerHight;
+    background-color: $secondColor;
+    padding: 1rem;
+    transition: top .6s ease;
+    & .container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}

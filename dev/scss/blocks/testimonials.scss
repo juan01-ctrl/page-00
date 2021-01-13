@@ -1,0 +1,76 @@
+.white{
+     background-color: $whiteAlphaColor;
+ }
+
+.hero-image-content{
+    width: 100%;
+    min-width: 320px;
+}
+ .slider-img{
+     border-radius: 50%;
+     width: 150px;
+     height: 150px;
+ }
+
+ //CAROUSEL
+
+ @keyframes  carousel-slide{
+     0%{
+transform: translateX(0);
+     }
+     25%{
+        transform: translateX(-25%);
+     }
+     50%{
+        transform: translateX(-50%);
+     }
+     75%{
+        transform: translateX(-75%);
+     }
+ }
+ .carousel{
+     margin: 2rem auto;
+     padding: 2rem 0;
+     max-width: 800px;
+     text-align: center;
+     background-color: $whiteAlphaColor;
+     overflow-x: hidden;
+     & input{
+         display: none;
+     }
+    
+     & label{
+         display: inline-block;
+         width: .75rem;
+         height: .75rem;
+         border: 2px solid $grayDarkColor;
+         border-radius: 50%;
+         cursor:pointer;
+         margin: 0 .25rem;
+     }
+     .slides{
+         width: 400%;
+         display: flex;
+         list-style: none;
+         transition: transform .5s ease-in-out;
+         padding-left: 0;
+         animation: carousel-slide 12s ease-in-out 3s;
+     }
+     #slide-1:checked ~ .slides{
+        transform: translateX(0);
+     }
+     #slide-2:checked ~ .slides{
+        transform: translateX(-25%);
+     }
+     #slide-3:checked ~ .slides{
+        transform: translateX(-50%);
+     }
+     #slide-4:checked ~ .slides{
+        transform: translateX(-75%);
+     }
+
+
+     #slide-1:checked ~ .carousel-nav label#dot-1,  #slide-2:checked ~ .carousel-nav label#dot-2,   #slide-3:checked ~ .carousel-nav label#dot-3,#slide-4:checked ~ .carousel-nav label#dot-4{
+        background-color: $grayDarkColor;
+     }
+ }

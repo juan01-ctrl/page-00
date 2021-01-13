@@ -1,0 +1,15 @@
+.footer{
+    background-color: $firstColor;
+    margin-bottom: 3.9rem;
+
+    &-text{
+      display: block;
+      text-align: center;
+      color: $whiteColor;
+      padding: 1rem ;
+      letter-spacing: 2px;
+      & a{
+        color: $blackColor;
+      }
+    }
+}
