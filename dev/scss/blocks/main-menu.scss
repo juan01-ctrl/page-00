@@ -31,6 +31,7 @@
         transition: text-decoration .3s;
         &:hover{
           background-color: $firstColor;
+          color: $firstColor;
          text-decoration: underline;
          text-decoration-color: $firstColor ;
          text-decoration-thickness: 3px;
