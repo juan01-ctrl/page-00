@@ -3,7 +3,7 @@
     left: 0;
     bottom: $headerHight;
     width: 100%;
-    background-color: $secondColor;
+    background-color: transparent;
     display: flex;
     flex-direction: column;
     opacity: 0;
@@ -28,8 +28,10 @@
         border-bottom: 1px solid $whiteAlphaColor;
         margin: 0 auto;
         &:hover{
-          color: $whiteColor;
           background-color: $firstColor;
+         text-decoration: underline;
+         text-decoration-color: $firstColor ;
+         text-decoration-thickness: 3px;
         }   
      }
     &-btn{

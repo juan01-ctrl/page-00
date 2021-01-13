@@ -5,7 +5,8 @@
     z-index: 999;
     width: 100%;
     height:$headerHight;
-    background-color: $secondColor;
+    background-color: $whiteAlphaColor;
+    backdrop-filter: saturate(180%) blur(20px);
     padding: 1rem;
     transition: top .6s ease,  bottom .6s ease;
     & .container{
