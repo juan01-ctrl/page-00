@@ -27,6 +27,7 @@
       opacity: 0;
       pointer-events: none;
       transition: opacity 0.6s ease-in-out, pointer-events 0.1s ease;
+      
     }
     .container-info-card {
       padding: 1rem;
@@ -48,7 +49,7 @@
   position: fixed;
   top: 0;
   right: 0;
-  bottom: 55px;
+  bottom: 0px;
   left: 0;
   display: flex;
   justify-content: center;
@@ -60,10 +61,7 @@
   &-content {
     position: relative;
   }
-  img{
-    width: 80%;
-    height: 80%;
-  }
+  
   &-close {
     position: absolute;
     top: 0.3rem;
@@ -87,9 +85,21 @@
     align-items: center;
     border-radius: 14px;
     background-color: $grayLightColor;
-    
-
    
+     }
+    
+     .portfolio-info{
+       h3{
+         font-size: 6vw;
+       }
+       p{
+         font-size: 12px;
+       }
+     }
+   img{
+     border-radius: 12px;
+     display: block;
+   }
     h3{
         border-bottom: 3px solid $firstColor;
         padding: .5rem 0;
@@ -103,4 +113,4 @@
         grid-auto-rows: 2rem;
     }
   }
-}
+

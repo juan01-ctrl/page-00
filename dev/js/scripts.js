@@ -1,20 +1,47 @@
-//  let firstScroll = window.pageYOffset;
+  let firstScroll = window.pageYOffset;
 
 
-//  window.addEventListener('scroll', ()=>{
-//      const actualScroll = window.pageYOffset;
-//       const header = document.getElementById('header')
+ window.addEventListener('scroll', ()=>{
+     const actualScroll = window.pageYOffset;
+       const header = document.getElementById('header')
+       if(innerWidth > 1024){
+       if(firstScroll >= actualScroll){
+           header.style.top = '0';
+         }else{
+             header.style.top = '-100px';
+         }
+         if(actualScroll < 730){
+           header.style.top = '0';
+        }
      
-//       if(firstScroll >= actualScroll){
-//           header.style.top = '0';
-//         }else{
-//             header.style.top = '-100px';
-//         }
-//         if(actualScroll < 730){
-//           header.style.top = '0';
-//         }
-//         firstScroll = actualScroll;
-//  })
+      
+         firstScroll = actualScroll;
+        }
+        if(innerWidth < 1024 && innerWidth > 768){
+          if(firstScroll >= actualScroll){
+            header.style.bottom = '0';
+          }else{
+            header.style.bottom = '-100px';
+          }
+          if(actualScroll > 5100){
+             header.style.bottom = '0';
+          }
+        
+        firstScroll = actualScroll;
+      }
+      if(innerWidth < 768){
+        if(firstScroll >= actualScroll){
+          header.style.bottom = '0';
+        }else{
+          header.style.bottom = '-100px';
+        }
+        if(actualScroll > 8000){
+           header.style.bottom = '0';
+        }
+      
+      firstScroll = actualScroll;
+    }
+  });
 const menuBtn = document.getElementById('menu-btn')
 
 

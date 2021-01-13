@@ -18,6 +18,15 @@
   }
   //SERVICES
   .portfolio {
+   .modal &-info{
+      h3{
+        font-size: 1.5rem;
+      }
+      p{
+        font-size: 1rem;
+      }
+    }
+    
     .container-porfolio{
         padding-left: 2rem;
         padding-right: 2rem;
