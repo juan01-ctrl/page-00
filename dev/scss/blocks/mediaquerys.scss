@@ -1,5 +1,8 @@
 @include media-tablet {
-
+//BASE
+.section-title{
+ width:450px ; 
+}
  
   //HOME
 
@@ -68,18 +71,25 @@
     height: 39px;
   }
   .menu {
-    opacity: 1;
+    background-color: transparent;
+     opacity: 1;
     pointer-events: auto;
     position: static;
     width: auto;
     flex-direction: row;
     padding: 0;
+    backdrop-filter: none;
     &-item {
       border: none;
       padding: 0 1rem;
       font-size: 1rem;
+      transition: text-decoration .3s, background-color .3s;
       &:hover {
+        color: $firstColor;
         background-color: transparent;
+        text-decoration: underline;
+        text-decoration-color: $firstColor ;
+         text-decoration-thickness: 3px;
       }
       &:last-child {
         padding-right: 0;

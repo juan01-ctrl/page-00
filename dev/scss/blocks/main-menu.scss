@@ -28,13 +28,11 @@
         letter-spacing: 1px;
         border-bottom: 1px solid $whiteAlphaColor;
         margin: 0 auto;
-        transition: text-decoration .3s;
+        transition: text-decoration .3s, background-color .3s, color .3s;
         &:hover{
           background-color: $firstColor;
-          color: $firstColor;
-         text-decoration: underline;
-         text-decoration-color: $firstColor ;
-         text-decoration-thickness: 3px;
+          color: $whiteColor;
+         
         }   
      }
     &-btn{
