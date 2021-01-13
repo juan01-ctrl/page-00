@@ -35,7 +35,7 @@
         }else{
           header.style.bottom = '-100px';
         }
-        if(actualScroll > 8000){
+        if(actualScroll > 7000){
            header.style.bottom = '0';
         }
       
