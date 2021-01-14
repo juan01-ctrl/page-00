@@ -6,4 +6,13 @@
     color: $whiteColor;
     background-color: $firstColor;
     display: inline-block;
+    cursor: pointer;
+    transition:background-color .4s ease-in-out, color .4s ease-in-out;
+    box-shadow: .25rem .25rem 1rem $firstColor;
+    &:hover{
+        background-color: $whiteColor;
+        color: $firstColor;
+        box-shadow: .25rem .25rem 1rem $firstAlphaColor;
+      
+    }
 }

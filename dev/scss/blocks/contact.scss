@@ -82,10 +82,8 @@
         padding: 1rem 1.5rem;
         border-radius: 12px;
         cursor: pointer;
-        transition: opacity .3s ;
-        &:hover{
-            opacity: .7;
-        }
+        transition:background-color .4s ease-in-out, color .4s ease-in-out ;
+
     }
     .modal#gracias:target{
         opacity: 1;
