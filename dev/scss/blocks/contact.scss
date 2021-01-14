@@ -82,7 +82,17 @@
         padding: 1rem 1.5rem;
         border-radius: 12px;
         cursor: pointer;
-        transition:background-color .4s ease-in-out, color .4s ease-in-out ;
+        transition:background-color .4s ease-in-out, color .4s ease-in-out;
+        display: inline-block;
+        font-weight: 500;
+        transition:background-color .4s ease-in-out, color .4s ease-in-out;
+        box-shadow: .25rem .25rem 1rem $firstColor;
+        &:hover{
+            background-color: $whiteColor;
+            color: $firstColor;
+            box-shadow: .25rem .25rem 1rem $firstAlphaColor;
+          
+        }
 
     }
     .modal#gracias:target{

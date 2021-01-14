@@ -1,3 +1,30 @@
+  (()=>{
+  const buttons = document.querySelectorAll('.btn')
+
+
+  buttons.forEach(btn=>{
+    btn.addEventListener('click',(e)=>{
+      e.preventDefault()
+         let x = e.clientX - e.target.offsetLeft;
+         let y = e.clientY - e.target.offsetTop;
+
+         let ripples = document.createElement('span')
+         ripples.classList.add('span-btn')
+         ripples.style.left = x + 'px'
+         ripples.style.top = y + 'px'
+
+         btn.appendChild(ripples);
+
+        setTimeout(()=>{
+          ripples.remove()
+        },1000)
+    })
+  })
+})();
+
+  
+  
+  
   let firstScroll = window.pageYOffset;
 
 
