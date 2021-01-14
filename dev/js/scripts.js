@@ -3,10 +3,10 @@
 
 
   buttons.forEach(btn=>{
-    btn.addEventListener('click',(e)=>{
+    btn.addEventListener('mousedown',(e)=>{
       e.preventDefault()
-         let x = e.clientX - e.target.offsetLeft;
-         let y = e.clientY - e.target.offsetTop;
+         let x = (e.clientX - e.target.offsetLeft) / e.offsetWidth;
+         let y = (e.clientY - e.target.offsetTop) / e.offsetHeight;
 
          let ripples = document.createElement('span')
          ripples.classList.add('span-btn')
