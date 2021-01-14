@@ -9,7 +9,7 @@
     display: inline-block;
     cursor: pointer;
     transition:background-color .4s ease-in-out, color .4s ease-in-out;
-    box-shadow: .25rem .25rem 1rem $firstColor;
+    box-shadow: .25rem .25rem 1rem $blackAlphaColor;
     overflow: hidden;
     &:hover{
         background-color: $whiteColor;
