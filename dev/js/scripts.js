@@ -45,12 +45,13 @@
          firstScroll = actualScroll;
         }
         if(innerWidth < 1024 && innerWidth > 768){
+          console.log('hola')
           if(firstScroll >= actualScroll){
             header.style.bottom = '0';
           }else{
             header.style.bottom = '-100px';
           }
-          if(actualScroll > 5100 || actualScroll < 450){
+          if(actualScroll > 4600 || actualScroll < 450){
              header.style.bottom = '0';
           }
         
@@ -62,7 +63,7 @@
         }else{
           header.style.bottom = '-100px';
         }
-        if(actualScroll > 6000){
+        if(actualScroll > 6000 || actualScroll < 750){
            header.style.bottom = '0';
         }
       
