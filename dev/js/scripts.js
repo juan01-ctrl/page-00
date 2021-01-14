@@ -44,7 +44,7 @@
       
          firstScroll = actualScroll;
         }
-        if(innerWidth < 1024 && innerWidth > 768){
+        if(innerWidth < 1024 && innerWidth >= 768){
           console.log('hola')
           if(firstScroll >= actualScroll){
             header.style.bottom = '0';
