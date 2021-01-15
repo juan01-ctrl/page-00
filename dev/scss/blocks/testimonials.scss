@@ -52,29 +52,20 @@ transform: translateX(0);
          cursor:pointer;
          margin: 0 .25rem;
      }
-     .slides{
-         width: 400%;
-         display: flex;
-         list-style: none;
-         transition: transform .5s ease-in-out;
-         padding-left: 0;
-         animation: carousel-slide 12s ease-in-out 3s;
-     }
-     #slide-1:checked ~ .slides{
-        transform: translateX(0);
-     }
-     #slide-2:checked ~ .slides{
-        transform: translateX(-25%);
-     }
-     #slide-3:checked ~ .slides{
-        transform: translateX(-50%);
-     }
-     #slide-4:checked ~ .slides{
-        transform: translateX(-75%);
-     }
+   
 
 
-     #slide-1:checked ~ .carousel-nav label#dot-1,  #slide-2:checked ~ .carousel-nav label#dot-2,   #slide-3:checked ~ .carousel-nav label#dot-3,#slide-4:checked ~ .carousel-nav label#dot-4{
-        background-color: $grayDarkColor;
-     }
  }
+
+.swiper-slide{
+   align-items: center;
+   padding-bottom:6rem ;
+
+   blockquote{
+      padding-left: 10vw;
+      padding-right: 10vw;
+   }
+}
+
+
+

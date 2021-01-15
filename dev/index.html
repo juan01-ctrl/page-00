@@ -5,8 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/styles.css">
+    <!-- SWIPER SLIDER -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <!-- FONTS -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+
     <title>Landing</title>
 </head>
 
@@ -430,14 +434,10 @@
                         <h2 class="section-title">
                             Mis clientes dicen
                         </h2>
-                        <section class="testimonials-carousel">
-                            <article class="carousel">
-                                <input type="radio" name="slides" id="slide-1" checked>
-                                <input type="radio" name="slides" id="slide-2">
-                                <input type="radio" name="slides" id="slide-3">
-                                <input type="radio" name="slides" id="slide-4">
-                                <ul class="slides">
-                                    <li class="slide"><img class="slider-img" src="./assets/img/customer-1.jpg"
+                        <div class="swiper-container">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img class="slider-img" src="./assets/img/customer-1.jpg"
                                             alt="cliente 1">
                                         <blockquote>
                                             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores quidem
@@ -447,8 +447,9 @@
                                         </blockquote>
                                         <h3>Sofía Rodriguez</h3>
                                         <h6>Diseñador</h6>
-                                    </li>
-                                    <li class="slide"><img class="slider-img" src="./assets/img/customer-2.jpg"
+                                </div>
+                                <div class="swiper-slide">
+                                    <img class="slider-img" src="./assets/img/customer-2.jpg"
                                             alt="cliente 2">
                                         <blockquote>
                                             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores quidem
@@ -456,41 +457,43 @@
                                             error distinctio, rem repudiandae provident doloremque veritatis?
                                             Perspiciatis, fugiat reprehenderit.
                                         </blockquote>
-                                        <h3>Paula Martinez</h3>
+                                        <h3>Pablo Martinez</h3>
                                         <h6>Marketin</h6>
-                                    </li>
-                                    <li class="slide"><img class="slider-img" src="./assets/img/pexels-pixabay-220453.jpg"
-                                            alt="cliente 1">
-                                        <blockquote>
-                                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores quidem
-                                            fugit laudantium ut, veniam et reprehenderit eaque vero sed praesentium
-                                            error distinctio, rem repudiandae provident doloremque veritatis?
-                                            Perspiciatis, fugiat reprehenderit.
-                                        </blockquote>
-                                        <h3>Lucas Perotti</h3>
-                                        <h6>SEO</h6>
-                                    </li>
-                                    <li class="slide"><img class="slider-img" src="./assets/img/pexels-simon-robben-614810.jpg"
-                                            alt="cliente 2">
-                                        <blockquote>
-                                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores quidem
-                                            fugit laudantium ut, veniam et reprehenderit eaque vero sed praesentium
-                                            error distinctio, rem repudiandae provident doloremque veritatis?
-                                            Perspiciatis, fugiat reprehenderit.
-                                        </blockquote>
-                                        <h3>Martín Rivero</h3>
-                                        <h6>Diseñador</h6>
-                                    </li>
-                                </ul>
-                                <aside class="carousel-nav">
-                                    <label for="slide-1" id="dot-1"></label>
-                                    <label for="slide-2" id="dot-2"></label>
-                                    <label for="slide-3" id="dot-3"></label>
-                                    <label for="slide-4" id="dot-4"></label>
-                                </aside>
-                            </article>
-
-                        </section>
+                                </div>
+                                <div class="swiper-slide">
+                                    <img class="slider-img" src="./assets/img/pexels-pixabay-220453.jpg"
+                                    alt="cliente 1">
+                                <blockquote>
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores quidem
+                                    fugit laudantium ut, veniam et reprehenderit eaque vero sed praesentium
+                                    error distinctio, rem repudiandae provident doloremque veritatis?
+                                    Perspiciatis, fugiat reprehenderit.
+                                </blockquote>
+                                <h3>Lucas Perotti</h3>
+                                <h6>SEO</h6>
+                                </div>
+                                <div class="swiper-slide">
+                                    <img class="slider-img" src="./assets/img/pexels-simon-robben-614810.jpg"
+                                    alt="cliente 2">
+                                <blockquote>
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores quidem
+                                    fugit laudantium ut, veniam et reprehenderit eaque vero sed praesentium
+                                    error distinctio, rem repudiandae provident doloremque veritatis?
+                                    Perspiciatis, fugiat reprehenderit.
+                                </blockquote>
+                                <h3>Martín Rivero</h3>
+                                <h6>Diseñador</h6>
+                                </div>
+                                
+                
+                            </div>
+                            <!-- Add Pagination -->
+                            <div class="swiper-pagination"></div>
+                            <!-- Add Arrows -->
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                        </div>
+                        
                     </div>
                 </aside>
             </article>
@@ -585,6 +588,11 @@
         <small class="footer-text">Sitio diseñado por <a href="#!" target="_blank"
                 rel="noopener">@IeraDesign</a></small>
     </footer>
+    
+    <!-- SLIDER JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js">
+    </script>
+    <!-- //INDEX JS -->
     <script src="./js/scripts-min.js"></script>
 </body>
 

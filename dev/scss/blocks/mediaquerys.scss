@@ -66,6 +66,15 @@
     display: grid;
     grid-template-columns: repeat(2, 50%);
   }
+
+  //
+  .swiper-slide{
+ 
+    blockquote{
+       padding-left: 18vw;
+       padding-right: 18vw;
+    }
+ }
 }
 
 @include media-desktop {
@@ -165,4 +174,11 @@
   .footer{
     margin-bottom: 0;
   }
+  .swiper-slide{
+ 
+    blockquote{
+       padding-left: 25vw;
+       padding-right: 25vw;
+    }
+ }
 }
