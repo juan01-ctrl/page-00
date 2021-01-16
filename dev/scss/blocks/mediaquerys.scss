@@ -99,19 +99,17 @@
     backdrop-filter: none;
     &-item {
       border: none;
-      padding: 0 1rem;
+      padding: .5rem 1rem;
       font-size: 1rem;
-      transition: text-decoration .3s, background-color .3s;
+      border-radius: 3px;
+      transition: transform .1s ease-in-out, box-shadow .5s, background-color 0s;
       &:hover {
-        color: $firstColor;
+         color: $firstColor;
         background-color: transparent;
-        text-decoration: underline;
-        text-decoration-color: $firstColor ;
-         text-decoration-thickness: 3px;
+        transform: translateY(-2px);
+        box-shadow: .25rem .25rem 1rem rgba(0, 0, 0, 0.25);
       }
-      &:last-child {
-        padding-right: 0;
-      }
+     
     }
 
     &-btn {
