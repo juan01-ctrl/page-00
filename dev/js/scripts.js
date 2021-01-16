@@ -1,26 +1,26 @@
-  (()=>{
-  const buttons = document.querySelectorAll('.btn')
+//   (()=>{
+//   const buttons = document.querySelectorAll('.btn')
 
 
-  buttons.forEach(btn=>{
-    btn.addEventListener('mousedown',(e)=>{
-      e.preventDefault()
-         let x = (e.clientX - e.target.offsetLeft) / e.offsetWidth;
-         let y = (e.clientY - e.target.offsetTop) / e.offsetHeight;
+//   buttons.forEach(btn=>{
+//     btn.addEventListener('mousedown',(e)=>{
+//       e.preventDefault()
+//          let x = (e.clientX - e.target.offsetLeft) / e.offsetWidth;
+//          let y = (e.clientY - e.target.offsetTop) / e.offsetHeight;
 
-         let ripples = document.createElement('span')
-         ripples.classList.add('span-btn')
-         ripples.style.left = x + 'px'
-         ripples.style.top = y + 'px'
+//          let ripples = document.createElement('span')
+//          ripples.classList.add('span-btn')
+//          ripples.style.left = x + 'px'
+//          ripples.style.top = y + 'px'
 
-         btn.appendChild(ripples);
+//          btn.appendChild(ripples);
 
-        setTimeout(()=>{
-          ripples.remove()
-        },1000)
-    })
-  })
-})();
+//         setTimeout(()=>{
+//           ripples.remove()
+//         },1000)
+//     })
+//   })
+// })();
 
   
   
