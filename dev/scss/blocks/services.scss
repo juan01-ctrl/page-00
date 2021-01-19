@@ -5,6 +5,9 @@
         padding-top: 2rem;
         margin:1rem auto ;
         text-align: center;
+        opacity: 0;
+        transform: translateY(100%);
+        transition: transform .4s ease-in, opacity .25s ease-in;
         h3{
             font-size: 1.6rem;
             color: $titleColor;
@@ -19,8 +22,12 @@
             fill: $firstColor;
             height:2.5rem;
         }
-
+    &.appear{
+        opacity: 1;
+        transform: translateY(0);
     }
+    }
+
 }
 .section-title{
     color: $titleColor;

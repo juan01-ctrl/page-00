@@ -126,3 +126,31 @@ document.addEventListener('click',e=>{
         }, 3000);
       });
   });
+
+
+
+  //Intersection Observer
+  const sliders = document.querySelectorAll('.slider')
+
+const callback = (entries, observer)=>{
+entries.forEach(entry =>{
+    if(!entry.isIntersecting){
+      return;
+    } else{
+        entry.target.classList.add("appear");
+        observer.unobserve(entry.target)
+    }
+})
+}
+
+const options  = {
+    // root: 
+    rootMargin:'0px 0px 0px 0px',
+    threshold:0
+
+}
+
+const observer = new IntersectionObserver(callback, options)
+
+
+sliders.forEach(slider=> observer.observe(slider))
